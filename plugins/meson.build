@@ -1,5 +1,6 @@
 subdir('dfu')
 subdir('ebitdo')
+subdir('flashrom')
 subdir('raspberrypi')
 subdir('steelseries')
 subdir('test')

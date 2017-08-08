@@ -144,6 +144,20 @@ const gchar	*fu_quirks_lookup_by_usb_device		(FuQuirks	*self,
  */
 #define	FU_QUIRKS_DFU_AVR_CHIP_ID		"fwupd-dfu-avr-chip-id"
 
+/**
+ * FU_QUIRKS_FLASHROM_HWID:
+ * @key: a HWID GUID, e.g. `a0ce5085-2dea-5086-ae72-45810a186ad0`
+ * @value: a device ID, e.g. `librem15v3`
+ *
+ * When the system motherboard can be updated using flashrom, this quirk maps
+ * a hardware ID to a device ID.
+ *
+ * The HWID can be found using the `fwupdmgr hwids` command.
+ *
+ * Since: 1.0.1
+ */
+#define	FU_QUIRKS_FLASHROM_HWID			"fwupd-flashrom-hwid"
+
 G_END_DECLS
 
 #endif /* __FU_QUIRKS_H */
